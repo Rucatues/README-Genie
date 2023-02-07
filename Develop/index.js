@@ -1,13 +1,12 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
-// fs.writeFileSync('./README2.md', 'Kelly');
 
 // TODO: Create an array of questions for user input
 inquirer.prompt([
     {
         type: 'input',
-        message: 'Welcome to the README Genie. What would you like the title of your README to be?',
+        message: 'Welcome to the README Genie. What would you like the name of your README to be? We will use this to create the file.',
         name: 'title'
     },
     {
@@ -50,15 +49,26 @@ inquirer.prompt([
         message: 'What is your email address? We will add your email in the Questions section.',
         name: 'email'
     }
-]);
-// .then(writeToFile);
+])
+    .then((data) => {
+        writeToFile(data);
+        console.log("worked!")
+    })
+    .catch((error) => {
+        if (error.isTtyError) {
+            console.log('Environment error')
+        } else {
+            console.log('Something else went wrong')
+        }
+    });
 
 
 // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {
-//     const fileName = `${data.title.toLowerCase().split(" ")} + ".md"`
-//     console.log(fileName);
-// }
+function writeToFile(data) {
+    const fileName = `${data.title.toLowerCase().split(" ")}` + ".md";
+    // fs.writeFile(fileName, JSON.stringify(data));
+    console.log(fileName);
+}
 
 // TODO: Create a function to initialize app
 function init() { }
