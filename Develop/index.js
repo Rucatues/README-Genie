@@ -67,7 +67,16 @@ inquirer.prompt([
 function writeToFile(data) {
     const fileName = `${data.title.toLowerCase().split(" ")}` + ".md";
     // fs.writeFile(fileName, JSON.stringify(data));
-    console.log(fileName);
+    // can also use <br> in markdown syntax for line breaks instead of \n
+    console.log("### " + data.title);
+    console.log("## Description\n\n" + data.description);
+    console.log("## Installation Instructions\n\n" + data.installation);
+    console.log("## Usage Information\n\n" + data.usage);
+    console.log("## License\n\n" + data.license);
+    console.log("## Contributing\n\n" + data.contributing);
+    console.log("## Questions\n\n" + "[Click here](github.com/" + data.github + ") to go to my Github.\n\n" + "Contact me anytime for questions via my email at " + "<" + data.email + ">");
+
+
 }
 
 // TODO: Create a function to initialize app
