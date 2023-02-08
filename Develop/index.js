@@ -70,15 +70,21 @@ function writeToFile(data) {
 
     let readMeTitle = ''
     if (data.title == '') {
-        readMeTitle = "### TITLE"
+        readMeTitle = "# TITLE" + "\n"
     } else {
-        readMeTitle = "### " + data.title + "\n"
+        readMeTitle = "# " + data.title + "\n"
     }
     contentOfReadMe.push(readMeTitle);
 
-    console.log(contentOfReadMe);
+    let readMeDescription = ''
+    if (data.description == '') {
+        readMeDescription = "## Description" + "\n";
+    } else {
+        readMeDescription = "## Description\n\n" + data.description + "\n"
+    }
+    contentOfReadMe.push(readMeDescription);
 
-    fs.writeFile((`./${fileName}`), contentOfReadMe.toString(), err => {
+    fs.writeFile((`./${fileName}`), contentOfReadMe.toString().replaceAll(',', ' '), err => {
         if (err) {
             console.error(err);
         }
