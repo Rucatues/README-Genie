@@ -1,5 +1,7 @@
 # :genie_man: README Genie :genie_man:
 
+![Languages]https://img.shields.io/github/languages/top/rucatues/README-Genie
+
 
 ## Table of Contents
 
@@ -27,5 +29,3 @@ Have you ever wanted to quickly type up a README for a project? This README Geni
 Run the following command in the root directory of your project. Answer the questions to generate a README which will be saved under the User_README folder:
   
 `node index.js`
-
-## Credits
