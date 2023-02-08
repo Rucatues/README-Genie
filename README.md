@@ -1,6 +1,6 @@
 # :genie_man: README Genie :genie_man:
 
-![Languages]https://img.shields.io/github/languages/top/rucatues/README-Genie
+![Languages](https://img.shields.io/github/languages/top/rucatues/README-Genie)
 
 
 ## Table of Contents
