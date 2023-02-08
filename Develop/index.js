@@ -61,26 +61,22 @@ inquirer.prompt([
             console.log('Something else went wrong')
         }
     });
-
-
 // TODO: Create a function to write README file
 function writeToFile(data) {
     const fileName = `${data.title.toLowerCase().split(" ")}` + ".md";
     // fs.writeFile(fileName, JSON.stringify(data));
-    // can also use <br> in markdown syntax for line breaks instead of \n
-    console.log("### " + data.title);
-    console.log("## Description\n\n" + data.description);
-    console.log("## Installation Instructions\n\n" + data.installation);
-    console.log("## Usage Information\n\n" + data.usage);
-    console.log("## License\n\n" + data.license);
-    console.log("## Contributing\n\n" + data.contributing);
-    console.log("## Questions\n\n" + "[Click here](github.com/" + data.github + ") to go to my Github.\n\n" + "Contact me anytime for questions via my email at " + "<" + data.email + ">");
+    console.log("### " + data.title + "\n");
+    console.log("## Description\n\n" + data.description + "\n");
+    console.log("## Installation Instructions\n\n" + data.installation + "\n");
+    console.log("## Usage Information\n\n" + data.usage + "\n");
+    console.log("## License\n\n" + data.license + "\n");
+    console.log("## Contributing\n\n" + data.contributing + "\n");
+    console.log("## Questions\n\n" + "[Click here](github.com/" + data.github + ") to go to my Github.\n\n" + "Contact me anytime for questions via my email at " + "<" + data.email + ">" + "\n");
 
+    // if (data.title === '') {
 
 }
+};
 
-// TODO: Create a function to initialize app
-function init() { }
-
-// Function call to initialize app
-init();
+    // Function call to initialize app
+    // init();
