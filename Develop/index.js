@@ -64,10 +64,13 @@ inquirer.prompt([
 // TODO: Create a function to write README file
 function writeToFile(data) {
 
+    //empty string to push content onto for README
     let contentOfReadMe = [];
 
+    // creating filename
     let fileName = `${data.title.toLowerCase().split(" ")}` + ".md";
 
+    //Title content
     let readMeTitle = ''
     if (data.title == '') {
         readMeTitle = "# TITLE" + "\n"
@@ -76,6 +79,7 @@ function writeToFile(data) {
     }
     contentOfReadMe.push(readMeTitle);
 
+    //Description content
     let readMeDescription = ''
     if (data.description == '') {
         readMeDescription = "## Description" + "\n";
@@ -83,6 +87,15 @@ function writeToFile(data) {
         readMeDescription = "## Description\n\n" + data.description + "\n"
     }
     contentOfReadMe.push(readMeDescription);
+
+    //Installation instructions content
+    let readMeInstallation = ''
+    if (data.installation == '') {
+        readMeInstallation = "## Installation Instructions" + "\n";
+    } else {
+        readMeInstallation = "## Installation Instructions\n\n" + data.installation + "\n";
+    }
+    contentOfReadMe.push(readMeInstallation);
 
     fs.writeFile((`./${fileName}`), contentOfReadMe.toString().replaceAll(',', ' '), err => {
         if (err) {
