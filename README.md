@@ -16,7 +16,7 @@
 
 ## Description
 
-Have you ever wanted to quickly type up a README for a project? This README Genie is for you! 
+Have you ever wanted to quickly type up a README for a project? This README Genie is for you! Answer a few questions and your README will be generated for you in milliseconds. If you do not answer a question, the README Genie will leave that section blank. 
 
 ## Video Walkthrough
 
