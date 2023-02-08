@@ -29,9 +29,9 @@ inquirer.prompt([
         message: 'Which license are you using for this project?',
         name: 'license',
         choices: [
-            'Apache License',
-            'MIT License',
-            'BSD License'
+            'Apache',
+            'MIT',
+            'BSD'
         ]
     },
     {
@@ -80,11 +80,22 @@ function writeToFile(data) {
     contentOfReadMe.push(readMeTitle);
 
     //License badge
-    // let badge =
-    //     contentOfReadMe.push(badge);
+    let badge = (license) => {
+        switch (license) {
+            case 'Apache':
+                return `[![License: MIT](https://img.shields.io/badge/License-Apache-yellow.svg)](https://opensource.org/licenses/Apache-2.0)`
+            case 'MIT':
+                return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+            case 'BSD':
+                return `[![License: MPL 2.0](https://img.shields.io/badge/License-BSD-yellow.svg)](https://opensource.org/licenses/BSD-2-Clause)`
+            case 'None':
+                return "N/A";
+        }
+    }
+    contentOfReadMe.push(badge(data.license));
 
     //Table of Contents
-    let tableOfContents = "## Table of Contents\n* [Description](#description)\n* [Installation Instructions](#installation-instructions)\n* [Usage](#usage)\n* [License](#license)\n* [Contributing](#contributing)\n* [Questions](#questions)\n";
+    let tableOfContents = "\n## Table of Contents\n* [Description](#description)\n* [Installation Instructions](#installation-instructions)\n* [Usage](#usage)\n* [License](#license)\n* [Contributing](#contributing)\n* [Questions](#questions)\n";
     contentOfReadMe.push(tableOfContents);
 
     //Description content

@@ -1,5 +1,6 @@
 # BLAHBLAH
- ## Table of Contents
+ [![License: MPL 2.0](https://img.shields.io/badge/License-BSD-yellow.svg)](https://opensource.org/licenses/BSD-2-Clause) 
+## Table of Contents
 * [Description](#description)
 * [Installation Instructions](#installation-instructions)
 * [Usage](#usage)
@@ -8,16 +9,16 @@
 * [Questions](#questions)
  ## Description
 
-asldkjf
+alkjsdf
  ## Installation Instructions
 
 asdf
  ## Usage
 
-asdfasf
+asdf
  ## License
 
-Apache License
+BSD
  ## Contributing
 
 asdf
@@ -25,4 +26,4 @@ asdf
 
 [Click here](github.com/asdf) to go to my Github.
 
-Contact me anytime for questions via email at <adf>
+Contact me anytime for questions via email at <asdf>
