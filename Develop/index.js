@@ -64,19 +64,21 @@ inquirer.prompt([
 // TODO: Create a function to write README file
 function writeToFile(data) {
     const fileName = `${data.title.toLowerCase().split(" ")}` + ".md";
-    // fs.writeFile(fileName, JSON.stringify(data));
-    console.log("### " + data.title + "\n");
-    console.log("## Description\n\n" + data.description + "\n");
-    console.log("## Installation Instructions\n\n" + data.installation + "\n");
-    console.log("## Usage Information\n\n" + data.usage + "\n");
-    console.log("## License\n\n" + data.license + "\n");
-    console.log("## Contributing\n\n" + data.contributing + "\n");
-    console.log("## Questions\n\n" + "[Click here](github.com/" + data.github + ") to go to my Github.\n\n" + "Contact me anytime for questions via my email at " + "<" + data.email + ">" + "\n");
-
-    // if (data.title === '') {
-
-}
+    fs.writeFile((`./${fileName}`), "test", err => {
+        if (err) {
+            console.error(err);
+        }
+        // file written successfully
+    });
 };
+    // console.log("### " + data.title + "\n");
+    // console.log("## Description\n\n" + data.description + "\n");
+    // console.log("## Installation Instructions\n\n" + data.installation + "\n");
+    // console.log("## Usage Information\n\n" + data.usage + "\n");
+    // console.log("## License\n\n" + data.license + "\n");
+    // console.log("## Contributing\n\n" + data.contributing + "\n");
+    // console.log("## Questions\n\n" + "[Click here](github.com/" + data.github + ") to go to my Github.\n\n" + "Contact me anytime for questions via my email at " + "<" + data.email + ">" + "\n");
+
 
     // Function call to initialize app
     // init();
