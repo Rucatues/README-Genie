@@ -63,14 +63,29 @@ inquirer.prompt([
     });
 // TODO: Create a function to write README file
 function writeToFile(data) {
-    const fileName = `${data.title.toLowerCase().split(" ")}` + ".md";
-    fs.writeFile((`./${fileName}`), "test", err => {
+
+    let contentOfReadMe = [];
+
+    let fileName = `${data.title.toLowerCase().split(" ")}` + ".md";
+
+    let readMeTitle = ''
+    if (data.title == '') {
+        readMeTitle = "### TITLE"
+    } else {
+        readMeTitle = "### " + data.title + "\n"
+    }
+    contentOfReadMe.push(readMeTitle);
+
+    console.log(contentOfReadMe);
+
+    fs.writeFile((`./${fileName}`), contentOfReadMe.toString(), err => {
         if (err) {
             console.error(err);
         }
         // file written successfully
     });
 };
+
     // console.log("### " + data.title + "\n");
     // console.log("## Description\n\n" + data.description + "\n");
     // console.log("## Installation Instructions\n\n" + data.installation + "\n");
