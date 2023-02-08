@@ -69,11 +69,16 @@ function writeToFile(data) {
 
     // creating filename
     let fileName = `${data.title.toLowerCase().split(" ")}` + ".md";
+    if (data.title == '') {
+        fileName = "userREADME.md"
+    } else {
+        fileName = `${data.title.toLowerCase().split(" ")}` + ".md";
+    }
 
     //Title content
     let readMeTitle = ''
     if (data.title == '') {
-        readMeTitle = "# TITLE" + "\n"
+        readMeTitle = "# README" + "\n"
     } else {
         readMeTitle = "# " + data.title + "\n"
     }
