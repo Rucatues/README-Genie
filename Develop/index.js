@@ -79,6 +79,14 @@ function writeToFile(data) {
     }
     contentOfReadMe.push(readMeTitle);
 
+    //License badge
+    // let badge =
+    //     contentOfReadMe.push(badge);
+
+    //Table of Contents
+    let tableOfContents = "## Table of Contents\n* [Description](#description)\n* [Installation Instructions](#installation-instructions)\n* [Usage](#usage)\n* [License](#license)\n* [Contributing](#contributing)\n* [Questions](#questions)\n";
+    contentOfReadMe.push(tableOfContents);
+
     //Description content
     let readMeDescription = ''
     if (data.description == '') {
