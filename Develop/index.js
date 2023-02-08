@@ -115,6 +115,24 @@ function writeToFile(data) {
     }
     contentOfReadMe.push(readMeLicense);
 
+    //Contributing section
+    let readMeContributing = ''
+    if (data.installation == '') {
+        readMeContributing = "## Contributing" + "\n";
+    } else {
+        readMeContributing = "## Contributing\n\n" + data.contributing + "\n";
+    }
+    contentOfReadMe.push(readMeContributing);
+
+    //Contributing section
+    let readMeQuestions = ''
+    if (data.installation == '') {
+        readMeQuestions = "## Contributing" + "\n";
+    } else {
+        readMeQuestions = "## Questions\n\n" + "[Click here](github.com/" + data.github + ") to go to my Github.\n\n" + "Contact me anytime for questions via email at " + "<" + data.email + ">" + "\n";
+    }
+    contentOfReadMe.push(readMeQuestions);
+
     fs.writeFile((`./${fileName}`), contentOfReadMe.toString().replaceAll(',', ' '), err => {
         if (err) {
             console.error(err);
@@ -122,14 +140,6 @@ function writeToFile(data) {
         // file written successfully
     });
 };
-
-    // console.log("### " + data.title + "\n");
-    // console.log("## Description\n\n" + data.description + "\n");
-    // console.log("## Installation Instructions\n\n" + data.installation + "\n");
-    // console.log("## Usage Information\n\n" + data.usage + "\n");
-    // console.log("## License\n\n" + data.license + "\n");
-    // console.log("## Contributing\n\n" + data.contributing + "\n");
-    // console.log("## Questions\n\n" + "[Click here](github.com/" + data.github + ") to go to my Github.\n\n" + "Contact me anytime for questions via my email at " + "<" + data.email + ">" + "\n");
 
 
     // Function call to initialize app

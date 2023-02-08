@@ -1,13 +1,21 @@
 # BLAHBLAH
  ## Description
 
-alsdkjf
+final
  ## Installation Instructions
 
-asdlfkj
+final
  ## Usage
 
-asdf
+final
  ## License
 
-MIT License
+Apache License
+ ## Contributing
+
+asdf
+ ## Questions
+
+[Click here](github.com/adf) to go to my Github.
+
+Contact me anytime for questions via email at <adf>
