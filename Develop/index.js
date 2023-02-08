@@ -97,6 +97,24 @@ function writeToFile(data) {
     }
     contentOfReadMe.push(readMeInstallation);
 
+    //Usage section
+    let readMeUsage = ''
+    if (data.installation == '') {
+        readMeUsage = "## Usage" + "\n";
+    } else {
+        readMeUsage = "## Usage\n\n" + data.usage + "\n";
+    }
+    contentOfReadMe.push(readMeUsage);
+
+    //License section
+    let readMeLicense = ''
+    if (data.installation == '') {
+        readMeLicense = "## License" + "\n";
+    } else {
+        readMeLicense = "## License\n\n" + data.license + "\n";
+    }
+    contentOfReadMe.push(readMeLicense);
+
     fs.writeFile((`./${fileName}`), contentOfReadMe.toString().replaceAll(',', ' '), err => {
         if (err) {
             console.error(err);
