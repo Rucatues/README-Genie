@@ -152,7 +152,7 @@ function writeToFile(data) {
     }
     contentOfReadMe.push(readMeQuestions);
 
-    fs.writeFile((`./${fileName}`), contentOfReadMe.toString().replaceAll(',', ' '), err => {
+    fs.writeFile((`./User_README/${fileName}`), contentOfReadMe.toString().replaceAll(',', ' '), err => {
         if (err) {
             console.error(err);
         }
