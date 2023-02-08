@@ -130,7 +130,7 @@ function writeToFile(data) {
     if (data.installation == '') {
         readMeLicense = "## License" + "\n";
     } else {
-        readMeLicense = "## License\n\n" + data.license + "\n";
+        readMeLicense = "## License\n\n" + `This project is covered under the ${data.license} License` + "\n";
     }
     contentOfReadMe.push(readMeLicense);
 
