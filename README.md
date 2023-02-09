@@ -26,11 +26,11 @@ Have you ever wanted to quickly type up a README for a project? This README Geni
 
 Here is an example of a filled out questionnaire in the terminal:  
 
-![Terminal-Example](./assets/TerminalScreenshot.png)  
+![Terminal-Example](./Develop/assets/TerminalScreenshot.png)  
 
 Here is an exmple of the generated README from this filled out questionnaire:  
 
-![Generated-README-Example](./assets/READMEPreview.png)
+![Generated-README-Example](./Develop/assets/READMEPreview.png)
 
 
 ## Installation
