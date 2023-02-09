@@ -18,6 +18,8 @@
 
 Have you ever wanted to quickly type up a README for a project but dread typing out each section? This README Genie is for you! Answer a few questions and your README will be generated for you in milliseconds. If you do not answer a question, the README Genie will leave that section blank. 
 
+To see an example of a README Genie generated README, please view the "project.md" file in the User_README folder in this repository. 
+
 ## Video Walkthrough
 
 [Click here](https://drive.google.com/file/d/13uErwDc3j9GDFtmnDyHeNHIp7fBhRZt0/view) to view a video walkthrough of the README Genie. 
