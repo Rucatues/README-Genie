@@ -20,6 +20,8 @@ Have you ever wanted to quickly type up a README for a project? This README Geni
 
 ## Video Walkthrough
 
+[Click here](https://drive.google.com/file/d/13uErwDc3j9GDFtmnDyHeNHIp7fBhRZt0/view) to view a video walkthrough of the README Genie. 
+
 ## Installation
 
 `npm init`
