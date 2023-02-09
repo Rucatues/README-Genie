@@ -52,7 +52,6 @@ inquirer.prompt([
 ])
     .then((data) => {
         writeToFile(data);
-        console.log("worked!")
     })
     .catch((error) => {
         if (error.isTtyError) {
