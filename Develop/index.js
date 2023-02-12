@@ -6,7 +6,7 @@ const inquirer = require('inquirer');
 inquirer.prompt([
     {
         type: 'input',
-        message: 'Welcome to the README Genie. What would you like the name of your README to be? We will use this to create the file.',
+        message: 'Welcome to the README Genie.\n What would you like the name of your README to be? We will use this to create the file.',
         name: 'title'
     },
     {
