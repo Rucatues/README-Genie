@@ -160,10 +160,5 @@ function writeToFile(data) {
         if (err) {
             console.error(err);
         }
-        // file written successfully
     });
 };
-
-
-    // Function call to initialize app
-    // init();

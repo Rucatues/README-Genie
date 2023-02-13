@@ -1,4 +1,4 @@
-# Project
+# project
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 ## Table of Contents
 * [Description](#description)
@@ -9,21 +9,21 @@
 * [Questions](#questions)
  ## Description
 
-This is the test description for the sample README. 
+This is the description section. 
  ## Installation Instructions
 
-This is the test instllation section for the sample README. 
+This is the installation section. 
  ## Usage
 
-This is the test usage section for the sample README
+This is the usage section. 
  ## License
 
 This project is covered under the MIT License
  ## Contributing
 
-This is the test contributing section for the sample README. 
+This is the contributing section. 
  ## Questions
 
-[Click here](github.com/usernameTest) to go to my Github.
+[Click here](github.com/usernametest) to go to my Github.
 
-Contact me anytime for questions via email at <Testemail@gmail.com>
+Contact me anytime for questions via email at <fakeemail@fakeemail.com>
